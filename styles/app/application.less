@@ -1,0 +1,244 @@
+/* Main Tags */
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700|Open+Sans:400,300,700);
+
+body{
+  font-family: "Lato", "Helvetica Neue", Helvetica, "Open Sans", Sans;
+  font-weight: normal;
+}
+
+.index {
+
+  background: -webkit-linear-gradient(90deg, #000000 0%, @at-blue 100%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #000000 0%, @at-blue 100%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #000000 0%, @at-blue 100%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #000000 0%, @at-blue 100%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #000000 0%, @at-blue 100%); /* W3C */
+}
+
+a {
+  text-decoration: none;
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+//Index.html
+
+.banner {
+  width: 100%;
+  margin-top: 50%;
+  padding: 40px;
+  height: auto;
+  color: @white;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+}
+
+.audiotool {
+  color: @at-blue;
+}
+
+.modal-content {
+  background-color: @black;
+  color: @white;
+  font-weight: 300;
+
+  input {
+    border-radius: 2px;
+    background-color: @black;
+    color: @white;
+  }
+
+  label{
+    font-weight: 300;
+  }
+}
+
+.btn {
+  margin-right: 10px;
+  background: transparent;
+  color: @white;
+  border-radius: 2px;
+  -webkit-transition: background 0.25s;
+  transition: background 0.25s;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+
+  &.btn-login {
+    border-color: @at-blue;
+    color: @at-blue;
+    &:hover,
+    &:active {
+      background-color: @at-blue;
+      color: @white;
+    }
+  }
+
+  &.btn-signup {
+    border-color: @green;
+    color: @green;
+    &:hover,
+    &:active {
+      background-color: @green;
+      color: @white;
+    }
+  }
+
+  &.btn-modal {
+    width: 100%;
+  }
+}
+
+.close {
+  color: @white;
+}
+
+//Home.html
+
+.home {
+  background: @at-gray;
+}
+
+
+.navbar-inverse {
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid @black;
+
+  .navbar-nav {
+      li > a{
+      -webkit-transition: background 0.25s;
+      transition: background 0.25s;
+
+      &:hover,
+      &:active {
+        background-color: @at-blue;
+      }
+    }
+
+    @media(max-width: @mobile) {
+      .badge {
+        float: right;
+      }
+    }
+  }
+
+  .navbar-brand {
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: @white;
+  }
+
+  .navbar-toggle {
+    margin: 0;
+    padding: 0px 14px;
+    border-radius: 0px;
+    font-size: 34px;
+    border-color: transparent;
+    border-left-color: @white;
+    -webkit-transition: background 0.25s;
+    transition: background 0.25s;
+
+    &:hover, 
+    &:active {
+      background-color: @at-blue;
+    }
+  }
+}
+
+.badge {
+  margin-left: 4px;
+  font-weight: 300;
+}
+
+.fa {
+  color: white;
+}
+
+.welcome {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: @at-gray;
+  color: @white;
+  border-bottom: 1px solid @black;
+
+  h2 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  ul {
+    padding: 0px;
+    list-style-type: none;
+
+    li{
+      padding: 5px 10px;
+
+      a {
+        color: @at-blue;
+        &:hover,
+        &:active {
+          text-decoration: none;
+        }
+      }
+
+      .fa {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+.action {
+  width: 100%;
+  padding: 18px 14px;
+  border-bottom: 1px solid @darkgray;
+  font-size: 16px;
+  text-transform: uppercase;
+  -webkit-transition: background 0.25s;
+  transition: background 0.25s;    
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    background-color: @at-blue;
+    text-decoration: none;
+  }
+
+  color: @white;
+  font-weight: 300;
+  letter-spacing: 2px; 
+  text-decoration: none;
+
+  .fa {
+    float: right;
+    padding-right: 8px;
+  }
+}
+
+//profile 
+.profile-header {
+  background: url("../img/avatar.jpg") no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100px;
+}
+
+.next-page {
+  text-align: center;
+  background-color: @black;
+  border-bottom: none;
+}
+
+
+//Albums
+
