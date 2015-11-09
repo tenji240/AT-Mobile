@@ -199,3 +199,90 @@ a:active {
   background-color: #000;
   border-bottom: none;
 }
+.player {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: 70px;
+}
+.album-art {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.album-art .a-art {
+  margin: auto;
+  max-width: 250px;
+  height: auto;
+  text-align: center;
+}
+.album-text {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  color: #ecf0f1;
+}
+.song-name {
+  font-size: 24px;
+}
+.song-artist {
+  font-size: 18px;
+}
+.song-duration {
+  margin-top: 12px;
+}
+.song-duration .progress-bar {
+  border-radius: 2px;
+  background-color: #0ec5ff;
+}
+.player-controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #000;
+  margin: 0;
+}
+.player-controls .btn {
+  border-radius: 1px;
+  margin: 0;
+  width: 20%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+.btn-group .btn + .btn {
+  margin-left: 0;
+}
+.previous,
+.play,
+.skip {
+  background-color: inherit;
+  -webkit-transition: background 0.25s;
+  transition: background 0.25s;
+}
+.previous:hover,
+.play:hover,
+.skip:hover,
+.previous:active,
+.play:active,
+.skip:active {
+  background-color: #0ec5ff;
+}
+.like,
+.plus {
+  background-color: inherit;
+}
+.like:hover,
+.plus:hover,
+.like:active,
+.plus:active {
+  background-color: #2ecc71;
+}
+.media-object {
+  width: 60px;
+  height: 60px;
+}
+.media-body button {
+  margin-top: 8px;
+}

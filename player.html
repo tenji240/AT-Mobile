@@ -45,70 +45,102 @@
       </div><!-- /.container-fluid -->
     </nav>    
 
-    <div class="row-fluid welcome profile-header">
-      <h2>MCT - ALBUMS</h2>
+    <div class="row-fluid player">
+      <div class="album-art">
+        <img class="a-art" src="img/avatar.jpg" alt="AT-RADIO">
+      </div>
+      <div class="album-text">
+        <div class="song-name">MCT-05</div>
+        <div class="song-artist">MCT</div>
+        <div class="song-duration">
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+          </div>
+          2:30
+        </div>
+      </div>
+      <div class="btn-group btn-group-justified player-controls" role="group">
+        <button type="button" class="btn btn-secondary like">
+          <i class="fa fa-thumbs-up"></i>
+        </button>
+        <button type="button" class="btn btn-secondary previous">
+          <i class="fa fa-chevron-left"></i>
+        </button>
+        <button type="button" class="btn btn-secondary play">
+          <i class="fa fa-play"></i>
+        </button>
+        <button type="button" class="btn btn-secondary skip">
+          <i class="fa fa-chevron-right"></i>
+        </button>
+        <button type="button" class="btn btn-secondary plus" data-toggle="modal" data-target="#addToAlbum">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
     </div>
-
-    <div class="profile-albums">
-      <a href="#">
-        <div class="row-fluid action">
-            <span>UNIT [MCT Remix]</span>
-            <i class="fa fa-chevron-right"></i>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="addToAlbum" tabindex="-1" role="dialog" aria-labelledby="addToAlbum">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Add to Album</h4>
+          </div>
+          <div class="modal-body">
+            <ul class="media-list">
+              <li class="media">
+                <div class="media-left media-middle">
+                  <a href="#">
+                    <img class="media-object" src="img/cover.jpg" alt="tmp">
+                  </a>
+                </div>
+                <div class="media-body">
+                  12 Tracks - 13 Likes - 1 Comment
+                  <button class="btn btn-info">Add to That New New</button>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-left media-middle">
+                  <a href="#">
+                    <img class="media-object" src="img/cover.jpg" alt="tmp">
+                  </a>
+                </div>
+                <div class="media-body">
+                  12 Tracks - 13 Likes - 1 Comment
+                  <button class="btn btn-info">Add to That New New</button>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-left media-middle">
+                  <a href="#">
+                    <img class="media-object" src="img/cover.jpg" alt="tmp">
+                  </a>
+                </div>
+                <div class="media-body">
+                  12 Tracks - 13 Likes - 1 Comment
+                  <button class="btn btn-info">Add to That New New</button>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-left media-middle">
+                  <a href="#">
+                    <img class="media-object" src="img/cover.jpg" alt="tmp">
+                  </a>
+                </div>
+                <div class="media-body">
+                  12 Tracks - 13 Likes - 1 Comment
+                  <button class="btn btn-info">Add to That New New</button>
+                </div>
+              </li>
+            </ul>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
         </div>
-      </a>
-      <a href="#">
-        <div class="row-fluid action">
-            MCT-01-F
-            <i class="fa fa-chevron-right"></i>
-        </div>
-      </a>
-      <a href="#">
-        <div class="row-fluid action">
-            MCT-O2-F
-            <i class="fa fa-chevron-right"></i>
-        </div>
-      </a>
-      <a href="#">
-        <div class="row-fluid action">
-            Night Ping
-            <i class="fa fa-chevron-right"></i>
-        </div>
-      </a>
-      <a href="#">
-        <div class="row-fluid action">
-            MCT-00-F
-            <i class="fa fa-chevron-right"></i>
-        </div>
-      </a>
-      <a href="#">
-        <div class="row-fluid action">
-            Bartholemew
-            <i class="fa fa-chevron-right"></i>
-        </div>
-      </a>
-      <a href="#">
-        <div class="row-fluid action">
-            Benevolence
-            <i class="fa fa-chevron-right"></i>
-        </div>
-      </a>
-      <a href="#">
-        <div class="row-fluid action">
-            MCT-03-808 Drop (2014 Edit)
-            <i class="fa fa-chevron-right"></i>
-        </div>
-      </a>
-      <a href="#">
-        <div class="row-fluid action">
-            Everyday Anyone
-            <i class="fa fa-chevron-right"></i>
-        </div>
-      </a>
-      <a href="#">
-        <div class="row-fluid action next-page">
-            Next Page
-        </div>
-      </a>      
+      </div>
     </div>
 
     <script src="js/jquery-2.1.4.min.js"></script>
